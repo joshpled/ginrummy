@@ -1,47 +1,6 @@
-<svg width="100%" height="100%" viewBox="0 0 165 200"
+<svg width="100%" height="100%" viewBox="0 0 160 200"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
-
-
-  <script><![CDATA[
-    var svgtest = new function()
-    {
-      window.addEventListener("load", init, false);
-      
-      function init()
-      {
-      	document.getElementById("fs").addEventListener("click",hidefs);
-      	for(var i=1;i<14;i++)
-      	{
-      	  document.getElementById(i+"c").addEventListener("click",function(e) {toggleViewPort(e);});
-      	  document.getElementById(i+"s").addEventListener("click",function(e) {toggleViewPort(e);});
-      	  document.getElementById(i+"h").addEventListener("click",function(e) {toggleViewPort(e);});
-      	  document.getElementById(i+"d").addEventListener("click",function(e) {toggleViewPort(e);});
-      	}
-      }
-      
-      function toggleViewPort(e)
-      {
-        var node = e.target;
-        var ref = node.getAttribute("xlink:href");
-        
-        node = document.getElementById("fs");
-        node.setAttribute("xlink:href",ref);
-        node.setAttribute("class","show");
-        document.getElementById("cards").setAttribute("class","hide");
-      }
-      
-      function hidefs()
-      {
-        node = document.getElementById("fs");
-        node.setAttribute("class","hide");
-        document.getElementById("cards").setAttribute("class","show");
-     }
-      
-    }();
-  ]]>
-  </script>
-
   <style type="text/css"><![CDATA[
     .show {display:initial;}
     .hide {display:none;}
@@ -891,73 +850,6 @@
 
   </defs>
 
-  <rect width="100%" height="100%" style="fill:none;stroke:navy;" class="hide" />
-
-  <g transform="translate(5,5)">
-    <g id="cards">
-      <g transform="translate(0,-1.5)">
-        <use id="13c" x="0" width="35" height="47.5" xlink:href="#c13" />
-        <use id="12c" x="10" width="35" height="47.5" xlink:href="#c12" />
-        <use id="11c" x="20" width="35" height="47.5" xlink:href="#c11" />
-        <use id="10c" x="30" width="35" height="47.5" xlink:href="#c10" />
-        <use id="9c" x="40" width="35" height="47.5" xlink:href="#c9" />
-        <use id="8c" x="50" width="35" height="47.5" xlink:href="#c8" />
-        <use id="7c" x="60" width="35" height="47.5" xlink:href="#c7" />
-        <use id="6c" x="70" width="35" height="47.5" xlink:href="#c6" />
-        <use id="5c" x="80" width="35" height="47.5" xlink:href="#c5" />
-        <use id="4c" x="90" width="35" height="47.5" xlink:href="#c4" />
-        <use id="3c" x="100" width="35" height="47.5" xlink:href="#c3" />
-        <use id="2c" x="110" width="35" height="47.5" xlink:href="#c2" />
-        <use id="1c" x="120" width="35" height="47.5" xlink:href="#c1" />
-      </g>
-      <g transform="translate(0,47)">
-        <use id="13s" x="0" width="35" height="47.5" xlink:href="#s13" />
-        <use id="12s" x="10" width="35" height="47.5" xlink:href="#s12" />
-        <use id="11s" x="20" width="35" height="47.5" xlink:href="#s11" />
-        <use id="10s" x="30" width="35" height="47.5" xlink:href="#s10" />
-        <use id="9s" x="40" width="35" height="47.5" xlink:href="#s9" />
-        <use id="8s" x="50" width="35" height="47.5" xlink:href="#s8" />
-        <use id="7s" x="60" width="35" height="47.5" xlink:href="#s7" />
-        <use id="6s" x="70" width="35" height="47.5" xlink:href="#s6" />
-        <use id="5s" x="80" width="35" height="47.5" xlink:href="#s5" />
-        <use id="4s" x="90" width="35" height="47.5" xlink:href="#s4" />
-        <use id="3s" x="100" width="35" height="47.5" xlink:href="#s3" />
-        <use id="2s" x="110" width="35" height="47.5" xlink:href="#s2" />
-        <use id="1s" x="120" width="35" height="47.5" xlink:href="#s1" />
-      </g>
-      <g transform="translate(0,95.5)">
-        <use id="13h" x="0" width="35" height="47.5" xlink:href="#h13" />
-        <use id="12h" x="10" width="35" height="47.5" xlink:href="#h12" />
-        <use id="11h" x="20" width="35" height="47.5" xlink:href="#h11" />
-        <use id="10h" x="30" width="35" height="47.5" xlink:href="#h10" />
-        <use id="9h" x="40" width="35" height="47.5" xlink:href="#h9" />
-        <use id="8h" x="50" width="35" height="47.5" xlink:href="#h8" />
-        <use id="7h" x="60" width="35" height="47.5" xlink:href="#h7" />
-        <use id="6h" x="70" width="35" height="47.5" xlink:href="#h6" />
-        <use id="5h" x="80" width="35" height="47.5" xlink:href="#h5" />
-        <use id="4h" x="90" width="35" height="47.5" xlink:href="#h4" />
-        <use id="3h" x="100" width="35" height="47.5" xlink:href="#h3" />
-        <use id="2h" x="110" width="35" height="47.5" xlink:href="#h2" />
-        <use id="1h" x="120" width="35" height="47.5" xlink:href="#h1" />
-      </g>
-      <g transform="translate(0,144)">
-        <use id="13d" x="0" width="35" height="47.5" xlink:href="#d13" />
-        <use id="12d" x="10" width="35" height="47.5" xlink:href="#d12" />
-        <use id="11d" x="20" width="35" height="47.5" xlink:href="#d11" />
-        <use id="10d" x="30" width="35" height="47.5" xlink:href="#d10" />
-        <use id="9d" x="40" width="35" height="47.5" xlink:href="#d9" />
-        <use id="8d" x="50" width="35" height="47.5" xlink:href="#d8" />
-        <use id="7d" x="60" width="35" height="47.5" xlink:href="#d7" />
-        <use id="6d" x="70" width="35" height="47.5" xlink:href="#d6" />
-        <use id="5d" x="80" width="35" height="47.5" xlink:href="#d5" />
-        <use id="4d" x="90" width="35" height="47.5" xlink:href="#d4" />
-        <use id="3d" x="100" width="35" height="47.5" xlink:href="#d3" />
-        <use id="2d" x="110" width="35" height="47.5" xlink:href="#d2" />
-        <use id="1d" x="120" width="35" height="47.5" xlink:href="#d1" />
-      </g>
-    </g>
-
-    <use id="fs" x="7.5" width="140" height="190" xlink:href="#h9" class="hide" />
-  </g>
+  <use id="fs" x="7.5" width="140" height="190" xlink:href="#h9" class="hide" />
 
 </svg>

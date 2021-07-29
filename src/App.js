@@ -1,5 +1,10 @@
+import PlayerCards from "containers/PlayerCards";
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <PlayerCards />
+    </div>
+  );
 }
 
 export default App;
